@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+.clearfix{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+header{
+	background-color: rgba(46,105,7,0.7);
+	height: 60px;
+}
+
+header i{
+	color: white;
+	font-size: 40px;
+	padding:10px;
+	float: left;
+}
+
+.nav-list{
+	float: right;
+}
+
+.nav-list-item {
+  list-style: none;
+  text-decoration: none;
+  line-height: 60px;
+  display: inline-block;
+  color :white;
+  margin: 0 20px;
+  font-family: 'Sacramento', cursive;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+}

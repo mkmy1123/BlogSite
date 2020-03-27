@@ -1,0 +1,19 @@
+
+<div class="container">
+	<div class="main-visual-box">
+	</div>
+</div>
+<div class="box">
+	<h1>Thanks for coming!</h1>
+</div>
+
+<div class="container2">
+	<% @blogs.each do |blog| %>
+	<div class="note">
+		<p><%= blog.created_at%></p>
+		<p><%= blog.title %></p>
+		<p><%= blog.body %></p>
+	</div>
+	<br>
+	<% end %>
+</div>
