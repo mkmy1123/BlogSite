@@ -10,9 +10,10 @@
 <div class="container2">
 	<% @blogs.each do |blog| %>
 	<div class="note">
-		<p><%= blog.created_at%></p>
-		<p><%= blog.title %></p>
-		<p><%= blog.body %></p>
+		<p>Time : <%= blog.created_at%></p>
+		<p>Title : <%= blog.title %></p>
+		<p>Body : <%= blog.body %></p>
+		<p class="tip"><%= link_to 'destroy',blog_path(blog),method: :delete ,class: "btn-sticky"%></p>
 	</div>
 	<br>
 	<% end %>

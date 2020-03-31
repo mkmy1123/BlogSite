@@ -14,15 +14,24 @@
     <i class="fas fa-paw"></i>
     <nav>
     <ul class="nav-list">
+      <% if user_signed_in? %>
       <li class="nav-list-item">
         <%= link_to "Home",blogs_path%>
       </li>
       <li class="nav-list-item">
-        <%= link_to "Login",new_user_session_path%>
+        <%= link_to "LogOut", destroy_user_session_path, method: :delete %>
       </li>
       <li class="nav-list-item">
         <%= link_to "Entry",new_blog_path%>
       </li>
+      <% else %>
+      <li class="nav-list-item">
+        <%= link_to "SignUp", new_user_registration_path %>
+      </li>
+      <li class="nav-list-item">
+        <%= link_to "Login", new_user_session_path %>
+      </li>
+      <% end %>
     </ul>
   </nav>
   </header>
