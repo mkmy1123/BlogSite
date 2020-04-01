@@ -1,24 +1,12 @@
-# README
+# BLOGSITE | 自主開発練習中
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DMM WEBCAMPの学生による
+初めて指南書なしのWebアプリケーション開発です。
 
-Things you may want to cover:
+Ruby on Railsを使ったユーザー機能付き
+簡易的なブログサイトを製作中。
+HTML / CSS の練習も兼ねてるので、
+デザインの試し打ちなどやりたいように。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+セキュリティ面など実装したいことはたくさんありますが、
+実験的にのんびりやっています。
