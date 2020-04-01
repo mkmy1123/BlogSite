@@ -35,6 +35,13 @@
 
 }
 
+.note-box{
+	width: 500px;
+	margin: 0 auto;
+	padding:0 1em;
+	position: relative;
+}
+
 .note {
   width: 500px;
   margin: 0 auto;
@@ -46,7 +53,6 @@
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   overflow: hidden;
-  position: relative;
 }
 
 .btn-sticky {
@@ -64,5 +70,11 @@
 }
 .tip{
 	text-align: right;
+}
+
+.block{
+	position: absolute;
+	bottom: 5px;
+	left: 450px;
 }
 

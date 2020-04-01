@@ -9,11 +9,15 @@
 
 <div class="container2">
 	<% @blogs.each do |blog| %>
+	<div class="note-box">
 	<div class="note">
-		<p>Time : <%= blog.created_at%></p>
+		<br>
+		<p><strong><%= blog.created_at.to_s(:datetime_jp)%></strong></p>
 		<p>Title : <%= blog.title %></p>
 		<p>Body : <%= blog.body %></p>
-		<p class="tip"><%= link_to 'destroy',blog_path(blog),method: :delete ,class: "btn-sticky"%></p>
+		<div class="block"><p class="tip"><%= link_to 'Delete?',blog_path(blog),method: :delete ,class: "btn-sticky"%></p></div>
+		<br>
+	</div>
 	</div>
 	<br>
 	<% end %>
