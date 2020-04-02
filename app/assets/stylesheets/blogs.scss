@@ -13,7 +13,6 @@
 	padding: 70px;
 }
 .container2{
-	height: 1000px;
 	background-color: #F5F5DC;
 	padding: 70px;
 }
@@ -64,6 +63,17 @@
   color: black;/*文字色*/
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
+
+.btn-sticky2 {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  background: white;
+  border-right: solid 6px rgba(46,180,7,0.7);/*左線*/
+  color: black;/*文字色*/
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
 .btn-sticky:active {
   box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
   transform: translateY(2px);
@@ -73,6 +83,12 @@
 }
 
 .block{
+	position: absolute;
+	bottom: 50px;
+	left: 450px;
+}
+
+.block2{
 	position: absolute;
 	bottom: 5px;
 	left: 450px;
