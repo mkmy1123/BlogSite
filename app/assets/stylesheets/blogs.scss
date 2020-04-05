@@ -54,30 +54,34 @@
   overflow: hidden;
 }
 
-.btn-sticky　/*付箋風削除ボタン*/ {
+/* 付箋風ボタン */
+.btn-sticky {
   display: inline-block;
   padding: 0 10px;
   text-decoration: none;
   background: white;
-  border-right: solid 6px rgba(46,105,7,0.7);/*左線*/
-  color: gray;/*文字色*/
+  border-right: solid 6px rgba(46,180,7,0.7);
+  color: black;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
 
-.btn-sticky2　/*付箋風編集ボタン*/ {
+/* 付箋風ボタン */
+.btn-sticky2 {
   display: inline-block;
   padding: 0 10px;
   text-decoration: none;
   background: white;
-  border-right: solid 6px rgba(46,180,7,0.7);/*左線*/
-  color: gray;/*文字色*/
+  border-right: solid 6px rgba(46,105,7,0.7);
+  color:black;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
 }
+
 
 .btn-sticky:active {
   box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
   transform: translateY(2px);
 }
+
 .tip{
 	text-align: right;
 }
