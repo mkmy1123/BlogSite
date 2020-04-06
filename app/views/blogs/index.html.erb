@@ -16,7 +16,7 @@
 		<p><strong>Title : </strong><%= blog.title %></p>
 		<p><strong>Body : </strong><%= simple_format(blog.body) %></p>
 		<div class="block"><p class="tip"><%= link_to 'Edit?',edit_blog_path(blog) ,class: "btn-sticky"%></p></div>
-		<div class="block2"><p class="tip"><%= link_to 'Delete?',blog_path(blog),method: :delete ,class: "btn-sticky2"%></p></div>
+		<div class="block2"><p class="tip"><%= link_to 'Delete?',blog_path(blog),method: :delete ,class: "btn-sticky2",data:{ confirm: 'Todoを削除しますか？',cancel: 'やめる',commit: '削除'}, title: '削除の確認'%></p></div>
 		<br>
 	</div>
 	</div>
