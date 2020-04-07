@@ -67,8 +67,6 @@ gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
 
 gem 'data-confirm-modal'
-
-
 gem 'font-awesome-sass', '~> 5.4.1'
 
 
