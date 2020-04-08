@@ -11,12 +11,12 @@
 
   <body>
   <header class="clearfix">
-    <i class="fas fa-paw"></i>
+    <%=link_to blogs_path do%><i class="fas fa-paw"></i><% end %>
     <nav>
     <ul class="nav-list">
       <% if user_signed_in? %>
       <li class="nav-list-item">
-        <%= link_to "Home",blogs_path%>
+        <%= link_to "About",about_path%>
       </li>
       <li class="nav-list-item">
         <%= link_to "LogOut", destroy_user_session_path, method: :delete %>
