@@ -14,11 +14,18 @@
  *= require_self
  */
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .clearfix{
 	content: "";
