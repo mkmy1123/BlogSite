@@ -96,3 +96,29 @@
 	left: 450px;
 }
 
+/*モーダル*/
+.start-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modalbox {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  background-color: #F5F5DC;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+.modalbox i{
+  font-size: 30px;
+  cursor: pointer;
+}

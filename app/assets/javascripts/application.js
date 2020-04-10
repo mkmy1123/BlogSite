@@ -17,3 +17,11 @@
 //= require activestorage
 //= require data-confirm-modal
 //= require_tree .
+
+$(function() {
+
+  $(".close-modal").click(function(){
+    $("#start-modal").fadeOut();
+  });
+
+});
