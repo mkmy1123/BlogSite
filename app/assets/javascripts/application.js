@@ -15,7 +15,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require activestorage
-//= require data-confirm-modal
 //= require_tree .
 
 $(function() {

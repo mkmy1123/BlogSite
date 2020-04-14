@@ -11,29 +11,35 @@
 
   <body>
   <header class="clearfix">
-    <%=link_to blogs_path do%><i class="fas fa-paw"></i><% end %>
-    <nav>
-    <ul class="nav-list">
-      <% if user_signed_in? %>
-      <li class="nav-list-item">
-        <%= link_to "About",about_path%>
-      </li>
-      <li class="nav-list-item">
-        <%= link_to "LogOut", destroy_user_session_path, method: :delete %>
-      </li>
-      <li class="nav-list-item">
-        <%= link_to "Entry",new_blog_path%>
-      </li>
-      <% else %>
-      <li class="nav-list-item">
-        <%= link_to "SignUp", new_user_registration_path %>
-      </li>
-      <li class="nav-list-item">
-        <%= link_to "Login", new_user_session_path %>
-      </li>
-      <% end %>
-    </ul>
-  </nav>
+    <div class="top-container">
+    <%=image_tag "header.png", class: "header-photo"%>
+    </div>
+    <div class ="line"></div>
+    <div class="menu">
+      <nav>
+      <ul class="nav-list">
+        <% if user_signed_in? %>
+        <li class="nav-list-item">
+          <%= link_to "About",about_path%>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "LogOut", destroy_user_session_path, method: :delete %>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "Entry",new_blog_path%>
+        </li>
+        <% else %>
+        <li class="nav-list-item">
+          <%= link_to "SignUp", new_user_registration_path %>
+        </li>
+        <li class="nav-list-item">
+          <%= link_to "Login", new_user_session_path %>
+        </li>
+        <% end %>
+      </ul>
+      </nav>
+    </div>
+    </div>
   </header>
 
     <%= yield %>
