@@ -3,7 +3,7 @@ class BlogsController < ApplicationController
   before_action :authenticate_user! ,only:[:new]
 
   def index
-  	@blogs = Blog.all
+  	@blogs = Blog.all.order(id: "desc")
   end
 
   def new

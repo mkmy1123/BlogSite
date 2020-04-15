@@ -74,21 +74,24 @@ header i{
 
 .nav-list{
 	float: center;
+  text-align: center;
 }
 
 .nav-list-item {
   list-style: none;
   text-decoration: none;
-  line-height: 60px;
+  line-height: 70px;
   display: inline-block;
   color :white;
-  margin: 0 20px;
+  margin: 0 50px;
   font-family: 'Sacramento', cursive;
 }
 
 header a{
 	text-decoration: none;
 	color: white;
+  font-size: 20px;
+  border-top: 1.5px solid;
 }
 
 header a:hover{

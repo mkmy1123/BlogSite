@@ -10,21 +10,21 @@
 </div>
 
 	<div class="main-container clearfix">
-		<div class="sidebar"></div>
+		<div class="sidebar">
+			<% @blogs.each do |blog| %>
+				<div class="note-box">
+				<div class="note">
+				<br>
+				<p><strong><%= blog.created_at.to_s(:datetime_jp)%></strong></p>
+				<p><strong>Title : </strong><%= blog.title %></p>
+				<p><strong>Update : </strong><%= simple_format(blog.body) %></p>
+				<div class="block"><p class="tip"><%= link_to 'Edit?',edit_blog_path(blog) ,class: "btn-sticky"%></p></div>
+				<div class="block2"><p class="tip"><%=link_to 'Delete?',blog_path(blog),method: :delete ,data: { confirm: 'Are you want to Delete？'},title: 'Excuse me...',class: "btn-sticky2" %></p></div>
+				<br>
+				</div>
+			</div>
+			<% end %>
+		</div>
 		<div class="content">
-		<% @blogs.each do |blog| %>
-		<div class="note-box">
-		<div class="note">
-			<br>
-			<p><strong><%= blog.created_at.to_s(:datetime_jp)%></strong></p>
-			<p><strong>Title : </strong><%= blog.title %></p>
-			<p><strong>Body : </strong><%= simple_format(blog.body) %></p>
-			<div class="block"><p class="tip"><%= link_to 'Edit?',edit_blog_path(blog) ,class: "btn-sticky"%></p></div>
-			<div class="block2"><p class="tip"><%=link_to 'Delete?',blog_path(blog),method: :delete ,data: { confirm: 'Are you want to Delete？'},title: 'Excuse me...',class: "btn-sticky2" %></p></div>
-			<br>
-		</div>
-		</div>
-		<br>
-		<% end %>
 		</div>
 	</div>
