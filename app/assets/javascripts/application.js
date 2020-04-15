@@ -21,7 +21,7 @@ $(function() {
 
   $(".close-modal").click(function(){
     $("#start-modal").fadeOut();
-    $("#start-modal").css('display', 'none');
+    $("#start-modal").addclass();
   });
 
 });
