@@ -19,7 +19,7 @@
 
 $(function() {
 
-  $(".close-modal").click(function(){
+  $(".close-modal").one("click",function(){
     $("#start-modal").fadeOut();
     $("#start-modal").addclass();
   });
